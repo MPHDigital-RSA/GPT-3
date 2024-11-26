@@ -268,8 +268,8 @@ header a:hover::after {
 
 @media (max-width: 480px) {
     .hero-text h1 {
-        font-size: 32px;
-        line-height: 36px;
+        font-size: 36px;
+        line-height: 40px;
     }
 
     .hero-text p {
