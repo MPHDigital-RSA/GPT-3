@@ -729,8 +729,8 @@ header a:hover::after {
     gap: 50px;
 }
 
-.blog h1 {
-    text-align: center;
+.blog h2 {
+    width: 50%;
 }
 
 .blog-item {
