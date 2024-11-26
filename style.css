@@ -499,6 +499,7 @@ header a:hover::after {
     padding: 80px 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .future .col-1 {
@@ -533,13 +534,66 @@ header a:hover::after {
     width: 70%;
 }
 
+@media (max-width: 980px) {
+    .future {
+        flex-direction: column;
+        gap: 50px;
+        padding: 30px 0;
+    }
+
+    .future .col-1 {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .future .col-2 {
+        width: 100%;
+    }
+
+    .future h2 {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .future p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 780px) {
+    .future {
+        border-bottom: 2px solid var(--form-input-bg);
+    }
+}
+
+@media (max-width: 480px) {
+    .future .col-2 .row {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .future .col-2 .heading {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .future .col-2 p {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 /* my apps styling */
 
 .my-apps {
     display: flex;
     gap: 20px;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
 }
 
 .my-apps img {
@@ -552,6 +606,46 @@ header a:hover::after {
     flex-direction: column;
     gap: 30px;
     align-items: start;
+}
+
+@media (max-width: 980px) {
+    .my-apps {
+        padding-top: 50px;
+    }
+
+    .my-apps h2 {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .my-apps p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 780px) {
+    .my-apps {
+        flex-direction: column-reverse;
+        padding-top: 20px;
+    }
+
+    .my-apps img {
+        min-width: 400px;
+        margin-top: 20px;
+    }
+
+    .my-apps .text {
+        width: 100%;
+        gap: 15px;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .my-apps img {
+        min-width: 300px;
+    }
 }
 
 /* register styling */
@@ -592,6 +686,12 @@ header a:hover::after {
     background-color: white;
     color: #040C18;
 }
+
+@media (max-width: 980px) {}
+
+@media (max-width: 780px) {}
+
+@media (max-width: 480px) {}
 
 /* blog styling */
 
