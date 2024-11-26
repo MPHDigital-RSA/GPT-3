@@ -349,16 +349,27 @@ header a:hover::after {
 /* LOGOS SECTION STYLING */
 
 .logos .container {
-    width: 30%;
+    width: 40%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-block: 50px;
+    gap: 20px;
 }
 
 .logos img {
     width: 50px;
 }
+
+@media (max-width: 980px) {
+    .logos .container {
+        width: 90%;
+        padding-block: 20px;
+        border-top: 2px solid var(--form-input-bg);
+    }
+}
+
+@media (max-width: 480px) {}
 
 
 /* WHAT IS GPT SECTION STYLING */
