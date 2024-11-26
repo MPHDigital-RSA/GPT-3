@@ -282,6 +282,16 @@ header a:hover::after {
         gap: 10px;
         margin-top: 10px;
     }
+
+    .hero-content form {
+        flex-direction: column;
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    .hero-content input {
+        width: 100%;
+    }
 }
 
 .people .text {
